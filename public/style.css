@@ -3,10 +3,16 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: Century Gothic;
+    
 }
 
 p {
     font-family: Century Gothic;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 80px;
 }
 
 #header {
@@ -20,6 +26,150 @@ p {
     color:black;
 }
 
+
+
+/** ----------- CLASSEEEES ----------- **/
+
+
+
+
+
+
+
+
+
+.header-color {
+    color:#3498db;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/** -------------------------------------- **/
+
+
+
+
+/**---------- ANIMATIOOOOOOOOONS-------------*/
+
+
+
+
+
+
+
+
+.animate-spin {
+    animation-name: spin-out;
+    animation-duration: 1s;
+}
+
+
+.animate-spin:hover {   
+    animation-name: spin-in;
+    animation-duration: 1s;
+    /*
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+    */
+}
+
+@keyframes spin-in {
+    from { 
+        transform: rotate(0deg); 
+    }
+    to { 
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes spin-out {
+    from { 
+        transform: rotate(360deg); 
+    }
+    to { 
+        transform: rotate(0deg); 
+    }
+}
+
+
+
+
+.animate-zoom {
+    animation-name: zoom-out;
+    animation-duration: 300ms;
+}
+
+.animate-zoom:hover {
+    animation-name: zoom-in;
+    animation-duration: 300ms;
+    transform: scale(1.2); 
+    /* (150% zoom - Note: if the zoom is too large, 
+    it will go outside of the viewport) */
+    transition:transform 259ms ease-in-out 120ms;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: sclae(1.2);
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1.0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/** -------------------------------------------- **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #nav {
     height: 100px;
     width: 100%;
@@ -28,22 +178,90 @@ p {
     position: fixed;
     font-size: 18px;
     color:black;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    display: flex;
 }
 
 #nav ul {
-    margin-top: 50px;
-    padding-left: 0px;  
-}
-
-#nav ul li{
+    align-items: start;
+    list-style-type: none;
+    margin-left: 0px;  
     display: inline;
-    text-decoration: none;
-    margin: 4%; 
-    color: white;
+    padding: 0px;
 }
 
-#background {
+#nav ul li {
+    display: inline;
+    padding: 6px 0; 
+    margin: 30px;
+    
+}
+
+#nav ul li a {
+    position: relative;
+
+    text-decoration: none;
+    
+    color: white;
+    padding: 4px 0;
+    
+    transition: 500ms;
+}
+
+#nav li .highlight::after {
+    color: #3498db;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#nav ul li a::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #3498db;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    
+}
+
+/*
+#nav ul li a:hover {
+        color: #3498db;
+}
+*/
+
+#nav ul li a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#background-home {
     background-image: url('./Images/constellation.jpg'); 
     /*background-repeat: inherit;*/
     min-width: 400px;
@@ -72,6 +290,7 @@ p {
     letter-spacing: 10px;
 }
 
+
 #pic #tag {
     font-size: 20px; 
     font-style: italic;
@@ -84,6 +303,7 @@ p {
     
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 550px;
     
     text-align: center;
     padding: 0px;
@@ -126,9 +346,123 @@ p {
 
 
 
-#sites ul img:hover {   
-    transform: rotate(360deg);
-    transition: all 0.3s ease-in-out 0s;
+
+
+
+
+
+#background-about {
+    background-color: #E3ECFA;
+   /* max-width: 1000px; */
+    min-width: 400px;
+    
+    
+}
+
+
+#background-about h1 {
+    font-size: 80px;
+    
+}
+/**
+
+#background-about p {
+   margin: 100px 20% 10px 40%;
+   line-height: 250%;
+
+}
+
+#background-about img {
+    height: 440px;
+    width: 360px;
+ 
+ }
+**/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+    padding: 10px;
+    margin: 0 auto;
+   /* border-style: solid; */
+    width: 85%;
+    max-width: 1200px;
+  }
+
+ 
+/*
+  .grid-item {
+      border-style: solid; 
+  }
+*/
+
+  
+
+  .grid-item img {
+    height: 385px;
+    width: 315px;
+    padding-top: 20%;
+    
+
+}
+
+
+  .grid-item p {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    padding: 10%;
+    font-size: 20px;
+    text-align: left;
+    margin: auto;
+    line-height: 300%;
+    max-width: 95%;
+    overflow: hidden;
+
+  }
+  
+
+
+/** -------------- EDUCATION ------------------- **/
+
+#background-educ {
+    height: 1080px; 
+    width: 100%;
+    background-image: url('./Images/background-educ.jpg');
+}
+
+#background-educ p {
+    font-size: 60px;
+    margin: 5%;
+    padding-top: 180px;
+
+}
+
+#timeline {
+    height: 5px;
+    width: 70%;
+    background-color: white;
+    margin: 400px auto 0 auto;
+}
+
+.time {
+
+    background-color: white;
+    display: inline;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 46%;
+    left: 0px;
+}
+
+.time-last {
+
+    background-color: white;
+    display: inline;
+    border-radius: 100%;
+    padding: 5px;
+    left: 0px;
+
+    
 }
 
 
@@ -140,12 +474,74 @@ p {
 
 
 
-@media only screen and (max-width: 800px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
     #nav {
-        font-size: 12px;  
+        font-size: 15px;
+        position: fixed;  
     }
     #nav ul li{
-        margin: 2%; 
+        margin: 10px; 
         
     }
 
@@ -196,6 +592,74 @@ p {
        
     }
 
+
+
+
+
+
+
+
+
+    #background-about h1 {
+        font-size: 60px;
+        
+    }
+    /**
+    
+    #background-about p {
+       margin: 100px 20% 10px 40%;
+       line-height: 250%;
+    
+    }
+    
+    #background-about img {
+        height: 440px;
+        width: 360px;
+     
+     }
+    **/
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+       /* background-color: #2196F3; */
+       
+    
+        padding: 8px;
+        margin-top: 0px;
+        width: 90%;
+
+        min-width: 400px;
+      }
+/*
+      .grid-item {
+          width: 90
+      }*/
+    
+      .grid-item img {
+        height: 220px;
+        width: 180px;
+        margin: 20% auto;
+    }
+    
+    
+      .grid-item p {
+       /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        padding-left: 30px;
+        font-size: 13px;
+        text-align: left;
+        margin: auto;
+        line-height: 300%;
+        width: 90%;
+
+
+        
+      }
+    
+
+
+
+
    
 
   }
@@ -212,15 +676,27 @@ p {
 
 
 
-  @media only screen and (max-width: 460px) {
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 500px) {
     #nav {
-        font-size: 11px;  
-       
+        font-size: 12px; 
     }
+
+
+
     #nav ul li{
-        margin: 2px; 
-     
-        
+        margin: 10px; 
+        max-width: 150px;
     }
 
 
@@ -233,7 +709,7 @@ p {
 
 
     #sites {
-        width: 200px;
+        width: 250px;
         /*border-style: solid;*/
        
     }
@@ -245,16 +721,73 @@ p {
     }
     
     #sites ul img {
-       height: 30px;
-       width: 27px;
-       margin-right: 4px;
+       height: 40px;
+       width: 36px;
+      
+       margin-right: 6px;
        margin-left: 0px;
        padding: 0px;
        left: 0px;
-       
+       max-width: 360px;
        
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    #background-about h1 {
+        font-size: 40px;
+        
+    }
+    /**
+    
+    #background-about p {
+       margin: 100px 20% 10px 40%;
+       line-height: 250%;
+    
+    }
+    
+    #background-about img {
+        height: 440px;
+        width: 360px;
+     
+     }
+    **/
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+       /* background-color: #2196F3; */
+        padding: 5px;
+        margin-top: 0px;
+        min-width: 360px;
+      }
+    
+      .grid-item img {
+        height: 110px;
+        width: 90px;
+        margin: 40% auto;
+    }
+    
+    
+      .grid-item p {
+       /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        padding: 10px;
+        font-size: 10px;
+        text-align: left;
+        margin: 20% 50% 8px 20%;
+        line-height: 300%;
+        
+      }
 
   }
 

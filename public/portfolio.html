@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0.jpg">
     <title>Portfolio Website</title>
 </head>
+<script>
+    /*
+    const myFunction = () => {
+        console.log('clicked myFunction');
+        document.getElementById("selected").class = "none";
+    var x = document.getElementById("selected").getElementsByClassName("class");
+        document.getElementById("demo").innerHTML = x.length;
+
+
+
+    var x = document.getElementsById("selected").getAttribute("class");
+    console.log(x.length);
+    }
+
+*/
+
+
+</script>
+
 <body>
     
     
@@ -15,18 +34,26 @@
     
     <div id = "nav">
         <ul type = "none">
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SERVICES</li>
-            <li>PROJECTS</li>
-            <li>CONTACTS</li>
+            <li><a href = "#">HOME</a></li>
+            <li><a href = "#">ABOUT</a></li>
+            <li><a href = "#">SERVICES</a></li>
+            <li><a href = "#">PROJECTS</a></li>
+            <li><a href = "#">CONTACTS</a></li>
         </ul>
     </div>
 
-    <div id = "background" style = "height: 1080px; width: 100%;" >
+
+
+
+    <!-- HOME -->
+
+
+
+
+    <div id = "background-home" style = "height: 1080px; width: 100%;" >
         
         <div id = "pic">
-            <img src = "./Images/1.jpg" height = "200" width = "200" id = "picture">
+            <img src = "./Images/1.jpg" class = "animate-zoom" height = "200" width = "200" id = "picture">
 
             <p>Ken Javier</p>
             <p id = "tag">Web Developer</p>
@@ -35,15 +62,61 @@
         
         <div id = "sites">
             <ul type = "none">
-                <li><a href = "https://www.facebook.com/kcjavier21" target = "_blank"> <img src = "./Images/Logos/Edited/Facebook.png"> </a></li>
-                <li><a href = "https://github.com/kcjavier21" target = "_blank"> <img src = "./Images/Logos/Edited/Github.png"> </a></li>
-                <li><a href = "https://www.instagram.com/kcjavier21/" target = "_blank"><img src = "./Images/Logos/Edited/instagram.png"></a></li>
-                <li><img src = "./Images/Logos/Edited/linkedin-logo.png"></li>
-                <li><img src = "./Images/Logos/Edited/Google.png"></li>
+                <li><a href = "https://www.facebook.com/kcjavier21" target = "_blank"> <img src = "./Images/Logos/Edited/Facebook.png" class = "animate-spin"> </a></li>
+                <li><a href = "https://github.com/kcjavier21" target = "_blank"> <img src = "./Images/Logos/Edited/Github.png" class = "animate-spin"> </a></li>
+                <li><a href = "https://www.instagram.com/kcjavier21/" target = "_blank"><img src = "./Images/Logos/Edited/instagram.png" class = "animate-spin"></a></li>
+                <li><img src = "./Images/Logos/Edited/linkedin-logo.png" class = "animate-spin"></li>
+                <li><img src = "./Images/Logos/Edited/Google.png" class = "animate-spin"></li>
                 
             </ul>
         </div>
     
+
+
+     
+      <!-- ABOUT ME-->
+        
+        <div id = "background-about" style = "height: 1080px; width: 100%;" >   
+
+        <h1 class = "header-color text-center">ABOUT ME</h1> 
+  <!--
+        <p>Hi! I'm Ken of the Zaid Media. I'm currently living in Quexon City, Metro Manila, Philiippines and studying at the University of Manila,
+            taking BS Computer Science. Zaid is after my middle name, "Diaz" in reverse. I've been doing digital arts, graphic design, and pther forms of visual
+            arts for four years. And now, I'm open  for web development and design.
+        </p>
+    -->
+        
+
+        <div class="grid-container">
+            <div class="grid-item"> <img src = "./Images/DSC00982.jpg"> </div>
+            <div class="grid-item"><p>Hi! I'm Ken of the Zaid Media. I'm currently living in Quexon City, Metro Manila, Philiippines and studying at the University of Manila,
+                taking BS Computer Science. Zaid is after my middle name, "Diaz" in reverse. I've been doing digital arts, graphic design, and pther forms of visual
+                arts for four years. And now, I'm open  for web development and design.</p>
+            </div>
+            
+            </div>
+
+        </div>
+
+
+        <div id = "background-educ" >
+
+        <p class = "header-color">Education</p>
+            
+            
+            <div id = "timeline">
+            <div class = 'time'>A</div>
+            <div class = 'time'>B</div>
+            <div class = 'time-last'>C</div>
+        
+        
+        </div>
+
+
+
+
+
+
         
     </div>
 
