@@ -82,13 +82,19 @@
     <div id = "background-home" style = "height: 1080px; width: 100%;" >
         
         <div id = "pic">
-            <img src = "./Images/1.jpg" class = "animate-zoom" height = "180" width = "180" id = "picture">
+            <img src = "./Images/1.jpg" height = "180" width = "180" id = "picture">
             
             <p style = "margin-top: 20px;">Ken Javier</p>
-            <p id = "tag">Web Developer</p>
+            <p id = "tag"><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+
+            
+              <!-- <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p> -->
+             
         </div> 
 
-        
+        <br>
+        <br>
+
         <div id = "sites">
             <ul type = "none">
                 <li><a href = "https://www.facebook.com/kcjavier21" target = "_blank"><img src = "./Images/Logos/Edited/Facebook.png" class = "animate-spin"> </a></li>
@@ -118,8 +124,8 @@
 
         <div class="grid-container justify-content-center align-items-center">
             <div class="grid-item"> <img src = "./Images/DSC00982.jpg"> </div>
-            <div class="grid-item"><p>Hi! I'm Ken ! I'm a front-end web developer, designer, and artist. I'm currently living in Quezon City, Metro Manila, Philippines. I've been freelancing for digital arts, graphic design, and other forms of visual
-                arts for four years. And now, I'm open for web development and design.</p>
+            <div class="grid-item"><p>Hi! I'm Ken ! I'm a front-end web developer, designer, and artist. I'm currently living in Malolos City, Bulacan 3000, Philippines. I've been freelancing for digital arts, graphic design, and other forms of visual
+                arts for two years. And now, I'm open for web development and design.</p>
                 
                 <h2>MY SKILLS:</h2>
                 <br>
@@ -130,6 +136,7 @@
                     <li>SASS</li>
                     <li>JQuery</li>
                     <li>Bootstrap</li>
+                    <li>Git</li>
                     <li>Adobe Photoshop</li>
 
                 </ul>
@@ -157,7 +164,7 @@
                         </div>
                     
                         <div class = "services-grid-item-exp text-center">
-                            <p><br>Your business needs to level-up! Have a stylish, dynamic, and mobile-friendly websites and web applications that will surely catch your target audience's attention.</p>
+                            <p><br>Your business needs to level-up! Have a stylish, responsive, and mobile-friendly websites and web applications that will surely catch your target audience's attention.</p>
                         </div>  
 
                 </div>
@@ -274,19 +281,19 @@
 
                     
                    
-                       <div class = "grid-wrapper-item-2">
+                       <div class = "grid-wrapper-item-2 animate-zoom">
                         
                             <div id = "contact">
                                 <img src = "./Images/Logos/Edited/location.png">
                             </div>
                             <div id = info>
                                 
-                                <p>86 Gat Damaso Kaluag St. Malolos City, Bulacan, Philippines</p>
+                                <p>86 Gat Damaso Kaluag St. Malolos City, Bulacan 3000, Philippines</p>
                             </div>
 
                         </div>
 
-                        <div class = "grid-wrapper-item-2">
+                        <div class = "grid-wrapper-item-2 animate-zoom"> 
                             <div id = "contact">
                                 <img src = "./Images/Logos/Edited/email.png">
                             </div>
@@ -298,7 +305,7 @@
 
                         </div>
 
-                        <div class = "grid-wrapper-item-2">
+                        <div class = "grid-wrapper-item-2 animate-zoom">
                             <div id = "contact">
                                 <img src = "./Images/Logos/Edited/phone.png">
                             </div>
@@ -310,6 +317,10 @@
                         </div>
 
 
+                 </div>
+
+                 <div id = "btn-default">
+                    <a target = "_blank" href = "https://mail.google.com/mail/u/0/#inbox?compose=new"><button type = "button">Send Me an E-mail Now!</button></a>
                  </div>
                 
             </div>  
@@ -356,13 +367,13 @@
     var position = scrollPosition/scrollHeight;
     console.log(position);
 
-    if(position <= 0.23){
+    if(position <= 0.30){
         $('#nav a:nth-child(1)').addClass('active').siblings().removeClass('active');
-    } else if ((position > 0.23) && (position <= 0.41)) {
+    } else if ((position > 0.30) && (position <= 0.48)) {
         $('#nav a:nth-child(2)').addClass('active').siblings().removeClass('active');
-    } else if ((position > 0.41) && (position <= 0.56)) {
+    } else if ((position > 0.48) && (position <= 0.65)) {
         $('#nav a:nth-child(3)').addClass('active').siblings().removeClass('active');
-    } else if ((position > 0.56) && (position <= 0.71)) {
+    } else if ((position > 0.65) && (position <= 0.83)) {
         $('#nav a:nth-child(4)').addClass('active').siblings().removeClass('active');
     } else {
         $('#nav a:nth-child(5)').addClass('active').siblings().removeClass('active');

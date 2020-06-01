@@ -407,9 +407,9 @@ OOO     OOO
     text-align: center;
     margin: 0 auto;
     padding-top: 200px;
-
-    width: 400px;
-    /*border-style: solid;*/
+    
+    width: 90%;
+    /* border-style: solid; */
 }
 
 
@@ -441,19 +441,19 @@ OOO     OOO
 
 #sites {
     
-    margin: 60px auto 550px auto;
+    margin: 0 auto 550px auto;
   
     
 
     text-align: center;
     padding: 0px;
-    width: 450px;
+    width: 70%;
     
     padding-left: 0px;  
 
     float: inherit;
 
-  /*  border-style: solid;  */
+  /* border-style: solid;  */
 }
 
 #sites ul {
@@ -535,18 +535,20 @@ OOO     OOO
     display: grid;
     grid-template-columns: 1fr 3fr;
     
-    margin: 25px auto;
+    margin: 20px auto;
     /*border-style: solid;*/ 
-    width: 85%;
+    width: 90%;
     max-width: 1200px;
   }
 
  
-/*
+
   .grid-item {
-      border-style: solid; 
+      /*border-style: solid; */
+      width: 98%;
+      margin: 0 auto;
   }
-*/
+
 
   
 
@@ -588,7 +590,7 @@ OOO     OOO
   }
   .grid-item ul li {
     /*border: 1px solid rgba(0, 0, 0, 0.8);*/
-    padding-left: 5%;
+   
     font-size: 18px;
     text-align: left;
     margin: auto;
@@ -816,14 +818,14 @@ OOO     OOO
     grid-template-columns: repeat(3, 1fr);
     
     margin: 0px auto;
-    width: 60%;
+    width: 70%;
     height: 300px;
     max-width: 1100px;
     grid-gap: 0px;
    
-    padding: 30px;
+    padding: 10px;
    
-    /*border-style: solid;*/    
+    /*border-style: solid;*/
    
   }
 
@@ -1001,6 +1003,8 @@ OOO     OOO
  
     width: 70%;
 
+
+
 }
 
 #btn-default button {
@@ -1043,6 +1047,7 @@ OOO     OOO
     border-width: 2px;
    
     border-color: #3498db; 
+    background-color: rgb(200, 200, 200);
     
     padding: 10px;
     
@@ -1052,7 +1057,7 @@ OOO     OOO
 
     grid-template-columns: 1fr 11fr;
     /*grid-template-columns: 1fr 4fr; */
-    margin: 5px auto;
+    margin: 10px auto;
 
     min-width: 450px;
 
@@ -1063,7 +1068,7 @@ OOO     OOO
 #contact {
     /*border-style: solid;
     border-color: rgba(0, 0, 0, 0.2); */
-
+    
    
     padding: 10px;
     font-size: 10px;
@@ -1085,6 +1090,7 @@ OOO     OOO
     border-color: rgba(0, 0, 0, 0.2);*/
     padding: 10px;
     font-size: 8px;
+    
 
    
     
@@ -1232,8 +1238,8 @@ OOO     OOO
         
             height: 40px;
             width: 300px;
-            font-size: 18px;
            margin: 0 auto;
+     
     
          
     }
@@ -1368,7 +1374,7 @@ OOO     OOO
 
     #sites {
         padding-left: 0px;
-        width: 300px;
+        
         /*border-style: solid;*/
 
     }
@@ -1425,9 +1431,9 @@ OOO     OOO
     
         padding: 5px;
         margin-top: 0px;
-    
+        width: 80%;
 
-        min-width: 400px;
+        /* min-width: 400px; */
 
         margin-top: 50px;
        
@@ -1552,9 +1558,11 @@ OOO     OOO
 
 
 .proj-all {
-    width: 70%;
     min-width: 510px;
     height: 200px;
+    width: 70%;
+   /* border-style: solid */
+    
 }
 
 
@@ -1756,11 +1764,7 @@ cursor: pointer;
 
 
 
-    #sites {
-        width: 250px;
-        /*border-style: solid;*/
-       
-    }
+
     
     
     #sites ul li {
@@ -1817,11 +1821,11 @@ cursor: pointer;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto-fill);
        /* background-color: #2196F3; */
-        padding: 10px;
+        padding: 0px;
         margin-top: 20px;
-        min-width: 360px;
-
-        
+       /* min-width: 360px; */
+        width: 90%;
+        /* border-style: dotted; */
       }
 /*
       .grid-item {
@@ -1920,7 +1924,7 @@ cursor: pointer;
  .proj-all {
  grid-template-columns: repeat(3, 1fr);
  grid-template-rows: repeat(3, 1fr);
- width: 95%;
+ width: 80%;
  padding: 0px;
  /* border-style: solid; */
 
@@ -1933,8 +1937,8 @@ cursor: pointer;
  
  /*border-style: solid;*/
  
- width: 120px;
- height: 120px;
+ width: 100px;
+ height: 100px;
  margin: 0px auto;
  padding: 0px;
  
@@ -1957,6 +1961,16 @@ cursor: pointer;
   }
 
  
+
+
+
+
+
+
+
+  #footer p{
+    font-size: 12px;
+}
 
 
 
