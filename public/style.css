@@ -140,7 +140,7 @@ h1 {
 .animate-zoom:hover {
     animation-name: zoom-in;
     animation-duration: 300ms;
-    transform: scale(1.2); 
+    transform: scale(1.1); 
     /* (150% zoom - Note: if the zoom is too large, 
     it will go outside of the viewport) */
     transition:transform 259ms ease-in-out 120ms;
@@ -152,13 +152,13 @@ h1 {
     }
 
     to {
-        transform: sclae(1.2);
+        transform: sclae(1.1);
     }
 }
 
 @keyframes zoom-out {
     from {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     to {
@@ -248,14 +248,15 @@ h1 {
 
 #sidebar {
     position:absolute;
-    top:0px;
+    bottom:0px;
     right:0px;
-    width:280px;
-    height:100%;
+    width:100%;
+    height:90%;
     background:#1a1a1a;
     text-align:center;
     transform-origin:right;
-    transform: rotateY(-90deg);
+    /*transform: rotateY(-90deg);*/
+    transform: translateX(205vw);
     transition:all 400ms ease;
     position: fixed;
     
@@ -321,13 +322,15 @@ h1 {
     position:absolute;
     right:5%;
     top:28px;
-    transition:left 100ms linear 0ms,transform 200ms ease 100ms;
+    /*transition:left 100ms linear 0ms,transform 300ms ease 200ms;*/
+    transition: 500ms;
     position: fixed;
     visibility: hidden;
   }
   #toggle-btn.active {
     /*left:210px;*/
-    transform:rotate(360deg);
+    transform:rotate(-360deg);
+    
   }
   #toggle-btn span {
     position:relative;
@@ -338,11 +341,14 @@ h1 {
     height:5px;
     margin:5px 0px;
     cursor:pointer;
-    transition:transform 259ms ease 120ms;
+    transition: 300ms;
+   
   }
   #toggle-btn.active span:nth-child(1) {
     top:10px;
     transform:rotate(45deg);
+    transition: 300ms;
+    background: red;
   }
   #toggle-btn.active span:nth-child(2) {
     opacity:0;
@@ -350,6 +356,8 @@ h1 {
   #toggle-btn.active span:nth-child(3) {
     top:-10px;
     transform:rotate(-45deg);
+    transition: 300ms;
+    background: red;
   }
 
 
@@ -427,6 +435,9 @@ OOO     OOO
     font-size: 50px;
     color: white;
     letter-spacing: 10px;
+    width: 95%;
+    /*border-style: solid;*/
+    margin: 0 auto;
    
 }
 
@@ -434,6 +445,11 @@ OOO     OOO
 #pic #tag {
     font-size: 20px; 
     font-style: italic;
+    /*border-style: solid;*/
+}
+
+.typed-text {
+    margin-left: 10px;
 }
 
 
@@ -821,7 +837,7 @@ OOO     OOO
     width: 70%;
     height: 300px;
     max-width: 1100px;
-    grid-gap: 0px;
+    grid-gap: 5px;
    
     padding: 10px;
    
@@ -837,8 +853,8 @@ OOO     OOO
     border-style: solid;*/
  
     
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     margin: 10px auto;
     padding: 0px;
 
@@ -851,8 +867,9 @@ OOO     OOO
 
 
 .proj-all .proj-all-item:nth-child(1) {
-    background-image: url('./Images/Projects/web-dev/wdv-1.JPG');
-   
+    background-image: url('./Images/Projects/web-dev/wdv-4.png');
+    background-size: 180%;
+    background-position: center;
     /*background-repeat: inherit;*/ 
 }
 
@@ -864,7 +881,9 @@ OOO     OOO
 }
 
 .proj-all .proj-all-item:nth-child(3) {
-    background-image: url('./Images/Projects/web-dev/wdv-3.JPG'); 
+    background-image: url('./Images/Projects/web-dev/wdv-5.JPG'); 
+    background-size: 200%;
+    background-position: center;
     
     /*background-repeat: inherit;*/
     
@@ -1560,7 +1579,7 @@ OOO     OOO
 .proj-all {
     min-width: 510px;
     height: 200px;
-    width: 70%;
+    width: 90%;
    /* border-style: solid */
     
 }
@@ -1570,8 +1589,8 @@ OOO     OOO
 
 /*border-style: solid;*/
 
-width: 150px;
-height: 150px;
+width: 160px;
+height: 160px;
 margin: 10px auto;
 padding: 0px;
 
@@ -1784,7 +1803,12 @@ cursor: pointer;
     }
 
 
-
+    #pic #tag {
+        font-size: 12px; 
+        padding-left: 5px;
+       
+    }
+    
 
 
 

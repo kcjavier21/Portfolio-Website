@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/b46dfdc01f7e44ca7a5fa53ee588dfd3?family=Angella+Narrow);
+
+
 @media (min-width: 768px) {
     .navbar-header {
       float: right;
@@ -10,4 +13,8 @@
     float: left;
     margin-left: 15px;
     margin-right: 0;
+  }
+
+  li {
+    font-family: Angella Narrow;
   }

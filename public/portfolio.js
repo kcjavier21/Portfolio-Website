@@ -5,15 +5,46 @@ function toggleSidebar(ref) {
 
 
 
+/*
+====================================================
+===============SMOOTH SCROLLING=====================
+=====================================================
+*/
+
+  var links = document.getElementsByTagName("a");
+
+//Browse the previously created array
+Array.prototype.forEach.call(links, function(elem, index) {
+  //Get the hyperlink target and if it refers to an id go inside condition
+  var elemAttr = elem.getAttribute("href");
+  if(elemAttr && elemAttr.includes("#")) {
+    //Replace the regular action with a scrolling to target on click
+    elem.addEventListener("click", function(ev) {
+      ev.preventDefault();
+      //Scroll to the target element using replace() and regex to find the href's target id
+      document.getElementById(elemAttr.replace(/#/g, "")).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+          });
+    });
+  }
+});
 
 
 
 
+/*
+======================================================
+===================== TYPING EFFECT ==================
+======================================================
+*/
 
-  const typedTextSpan = document.querySelector(".typed-text");
+
+const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Web Developer", "Web Designer", "Graphic Designer", "Digital Artist"];
+const textArray = ["Front-end Developer", "Web Designer", "Logo Designer", "Illustrator"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 1000; // Delay between current and next text
